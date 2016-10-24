@@ -17,7 +17,7 @@ body {
   overflow: hidden;
 }
 
-#environment {
+#container {
   width: 100vw;
   height: 100vh;
   background: #3A216C; /* For browsers that do not support gradients */
@@ -27,12 +27,12 @@ body {
   background: linear-gradient(#3A216C, #3FCDBE, #EBF1B1); /* Standard syntax */
 }
 
-#stars {
+/*#stars {
   z-index: 2;
   width: calc(100vw - 300px);
   height: 100vh;
   float: right;
-}
+}*/
 
 #side-bar {
   -webkit-box-shadow: 4px 0px 3px 0px rgba(50, 50, 50, 0.5);
@@ -76,6 +76,23 @@ body {
 
 #user-email {
   font-size: 1em;
+  margin-top: 5px;
+}
+
+#user-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+  margin-top: 10px;
+}
+
+#linked-in {
+  color: red;
 }
 
 #user-bio {
